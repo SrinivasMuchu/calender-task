@@ -1,0 +1,392 @@
+.calender-container-div{
+  width: 85%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.calender-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  /* background-color: #f0f0f0; */
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(204, 203, 203);
+  
+}
+.calender-header-left{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.calender-header-arrows{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  
+
+}
+.calender-header-line{
+  width: 1px;
+  height: 30px;
+  background: rgb(204, 203, 203);
+
+}
+
+.avatar-group {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -8px;
+  object-fit: cover;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: #333;
+  
+}
+
+.avatar:first-child {
+  margin-left: 0;
+}
+
+.initials.blue {
+  background-color: #dbeafe;
+  color: #1e3a8a;
+}
+
+.initials.green {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.more {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+.add-member-button{
+  display: flex;
+
+  align-items: center;
+  gap: 15px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: 1px solid rgb(204, 203, 203);
+  background: white;
+}
+.calender-heading{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.calender-heading-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+.calender-heading-right{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tabs-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px 0px;
+  border-bottom: 2px solid #eee;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.tabs-left {
+  display: flex;
+  gap: 20px;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #777;
+  font-size: 14px;
+  cursor: pointer;
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.tab:hover {
+  color: #000;
+}
+
+.tab.active {
+  color: #000;
+  border-color: #333;
+  font-weight: bold;
+}
+
+.tab-icon {
+  font-size: 18px;
+}
+
+.tabs-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #ccc;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.new-btn {
+  background-color: #111;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px #eee;
+  font-family: sans-serif;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.month-label {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #1f2937;
+}
+
+.today-btn {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.today-btn:hover {
+  background-color: #f9fafb;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.view-toggle {
+  display: flex;
+  gap: 4px;
+  background-color: #f3f4f6;
+  border-radius: 6px;
+  padding: 2px;
+}
+
+.view-btn {
+  padding: 6px 10px;
+  font-size: 14px;
+  border: none;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.view-btn.active {
+  background-color: white;
+  color: #111827;
+  box-shadow: 0 0 0 1px #d1d5db;
+}
+
+.date-range {
+  font-size: 14px;
+  background-color: #f9fafb;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.calendar {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+}
+
+.time-column-header {
+  width: 80px;
+}
+
+.day-header {
+  flex: 1;
+  padding: 10px;
+  background-color: white;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+.day-header:hover {
+  background-color: #f9fafb;
+  cursor: pointer;
+}
+.body {
+  display: flex;
+  position: relative;
+}
+
+.time-column {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.time-slot {
+  height: 60px;
+  padding: 8px;
+  font-size: 12px;
+  color: #666;
+  border-top: 1px solid #eee;
+}
+.grid {
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  background-color: white;
+  border-left: 1px solid #e5e7eb;
+}
+
+.day-column {
+  flex: 1;
+  position: relative;
+  border-right: 1px solid #e5e7eb;
+}
+
+.cell {
+  height: 60px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.event {
+  position: absolute;
+  width: 120px;
+  margin: 2px 5px;
+  padding: 6px;
+  box-sizing: border-box;
+  font-size: 12px;
+  border-radius: 6px;
+  color: white;
+  z-index: 1;
+  line-height: 1.2;
+}
+
+.event-title {
+  font-weight: 500;
+}
+
+.purple {
+  background-color: #d8b4fe;
+}
+
+.blue {
+  background-color: #60a5fa;
+}
+
+.green {
+  background-color: #86efac;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal input {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-buttons button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
